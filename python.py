@@ -30,3 +30,11 @@ def twoSum(arr, S):
     return False
 
 
+def sumNested(arr):
+    result = 0
+    for i in range(0, len(arr)):
+        if type(arr[i]) is not int:
+            result += sumNested(arr[i])
+        else:
+            result += arr[i]
+    return result
