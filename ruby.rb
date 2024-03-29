@@ -21,3 +21,22 @@ def fizzBuzz(n)
   end
   return result
 end
+
+
+
+
+def twoSum(arr, s)
+  hashTable = Hash.new
+
+  arr.each_with_index do |v, i|
+
+    sumMinusElement = s - arr[i]
+
+    if hashTable.key?(sumMinusElement)
+      return true
+    end
+    hashTable[arr[i]] = true
+  end
+  return false
+end
+
