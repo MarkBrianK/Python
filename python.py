@@ -146,8 +146,8 @@ def main():
     print("Sorted numbers:", sorted_numbers)
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
 
 def bubble_sort(arr):
