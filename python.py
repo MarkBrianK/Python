@@ -15,3 +15,18 @@ def fizzBuzz(n):
         else:
             result.append(add)
     return result
+
+
+def twoSum(arr, S):
+    hashTable = {}
+
+    for i in range(0, len(arr)):
+        sumMinusElement = S - arr[i]
+
+    if sumMinusElement in hashTable:
+        return True
+    hashTable[arr[i]] = True
+
+    return False
+
+
